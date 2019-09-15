@@ -1,0 +1,36 @@
+<div class="container" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
+    <div class="item item-1" fxFlex="40%" fxFlexOrder="1">
+            <google-chart #chart
+            [title]="title"
+            [type]="type"
+            [data]="data"
+            [columnNames]="columnNames"
+            [options]="options">
+         </google-chart>
+    </div>
+    <div class="item item-1" fxFlex="40%" fxFlexOrder="2">
+            <google-chart #chart
+            [title]="titleBuble"
+            [type]="typeBuble"
+            [data]="dataBuble"
+            [columnNames]="columnNamesBuble"
+            [options]="options">
+         </google-chart>
+    </div>
+</div>
+<div class="container"
+    fxLayout="row wrap"
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="10px"
+     fxLayoutGap.xs="0">
+  <div class="item item-5" fxFlex="400px">
+        <google-chart #chart3
+        [title]="titleCombination"
+        [type]="typeCombination"
+        [data]="dataCombination"
+        [columnNames]="columnNamesCombination"
+        [options]="optionsCombination">
+     </google-chart>
+  </div>
+</div>
