@@ -15,32 +15,45 @@ import { ChartsDashboardComponent } from './charts-dashboard/charts-dashboard.co
 import { CardsDashboardComponent } from './cards-dashboard/cards-dashboard.component';
 import {TableComponent} from './table/table.component';
 import {LayoutModule} from '@angular/cdk/layout';
+import { FormDashboardComponent } from './form-dashboard/form-dashboard.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TableComponent,
-    ChartsDashboardComponent,
-    CardsDashboardComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-    AppRoutingModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatListModule,
-    MatButtonModule,
-    MatIconModule,
-    FlexLayoutModule,
-    MatTableModule,
-    LayoutModule,
-    MatInputModule,
-    GoogleChartsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+   declarations: [
+      AppComponent,
+      TableComponent,
+      ChartsDashboardComponent,
+      CardsDashboardComponent,
+      FormDashboardComponent
+   ],
+   imports: [
+      BrowserModule,
+      AppRoutingModule,
+      BrowserAnimationsModule,
+      HttpClientModule,
+      AppRoutingModule,
+      MatToolbarModule,
+      MatSidenavModule,
+      MatListModule,
+      MatButtonModule,
+      MatIconModule,
+      FlexLayoutModule,
+      MatTableModule,
+      LayoutModule,
+      MatInputModule,
+      GoogleChartsModule,
+      FormsModule,
+      ReactiveFormsModule,
+      MatCheckboxModule,
+      MatRadioModule,
+      MatSelectModule
+   ],
+   providers: [],
+   bootstrap: [
+      AppComponent
+   ]
 })
 export class AppModule { }
