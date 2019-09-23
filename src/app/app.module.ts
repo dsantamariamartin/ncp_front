@@ -20,6 +20,17 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
+import { LoginComponent } from './login/login.component';
+import {LoginService} from './login/login.service';
+import {UserService} from './user/user.service';
+import {MatCardModule} from '@angular/material/card';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { HeaderComponent } from './header/header.component';
+import {MatMenuModule} from '@angular/material/menu';
+import { AlertComponent } from './alert/alert.component';
+import { RegisterComponent } from './register/register.component';
+import {RegisterService} from './services/register.service'
 
 @NgModule({
    declarations: [
@@ -27,7 +38,12 @@ import {MatSelectModule} from '@angular/material/select';
       TableComponent,
       ChartsDashboardComponent,
       CardsDashboardComponent,
-      FormDashboardComponent
+      FormDashboardComponent,
+      LoginComponent,
+      DashboardComponent,
+      HeaderComponent,
+      AlertComponent,
+      RegisterComponent
    ],
    imports: [
       BrowserModule,
@@ -49,9 +65,16 @@ import {MatSelectModule} from '@angular/material/select';
       ReactiveFormsModule,
       MatCheckboxModule,
       MatRadioModule,
-      MatSelectModule
+      MatSelectModule,
+      MatCardModule,
+      MatProgressSpinnerModule,
+      MatMenuModule
    ],
-   providers: [],
+   providers: [
+      LoginService,
+      UserService,
+      RegisterService
+   ],
    bootstrap: [
       AppComponent
    ]
